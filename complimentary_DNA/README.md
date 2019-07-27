@@ -18,3 +18,6 @@ DNA_strand ("GTAT") # return "CATA"
 - can you avoid repetition e.g. having to code a scenario for A and T, and T and A?
   - start with repetition as MVP, then try to simplify
 - Requirements are so simple that probably only 1 class (DNA_string) is needed, method name for the conversion process could be `#create_complimentary_string`
+
+## Final product:
+- I decided not to avoid repetition by refactoring `#create_complimentary_string` because the number of DNA combination is fixed - there will always by 4 letters and 4 combinations - therefore it would make my code unnecessarily complicated and less readable to refactor the above method than it would be to keep it the same and have some slight repetition
