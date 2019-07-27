@@ -1,2 +1,8 @@
 class DNA_String
-end 
+
+  def create_complimentary_string(string)
+    complimentary_pairs = {"A" => "T"}
+    complimentary_pairs[string]
+  end
+
+end
