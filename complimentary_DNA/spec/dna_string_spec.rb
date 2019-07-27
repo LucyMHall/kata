@@ -10,6 +10,7 @@ RSpec.describe DNA_String do
   # DNA_strand ("ATTGC") # return "TAACG"
 
   describe "#create_complimentary_string" do
+    
     it "returns A when passed T" do
       expect(@dna_string.create_complimentary_string("A")).to eq("T")
     end
@@ -21,6 +22,11 @@ RSpec.describe DNA_String do
     it "returns G when passed C" do
       expect(@dna_string.create_complimentary_string("G")).to eq("C")
     end
+
+    it "returns C when passed G" do
+      expect(@dna_string.create_complimentary_string("C")).to eq("G")
+    end
+
   end
 
 end
