@@ -13,6 +13,10 @@ RSpec.describe DNA_String do
     it "returns A when passed T" do
       expect(@dna_string.create_complimentary_string("A")).to eq("T")
     end
+
+    it "returns T when passed A" do
+      expect(@dna_string.create_complimentary_string("T")).to eq("A")
+    end
   end
 
 end
