@@ -1,11 +1,9 @@
 class DNA_String
 
   def create_complimentary_string(string)
-    complimentary_array_of_letters = []
-    string.chars.each do |letter|
-      complimentary_array_of_letters << find_pair(letter)
-    end
-    complimentary_array_of_letters.join
+
+    complimentary_array = string.chars.map {|letter| find_pair(letter)}
+    complimentary_array.join
   end
 
   private
